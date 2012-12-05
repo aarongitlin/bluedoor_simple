@@ -42,3 +42,5 @@ gem 'active_attr'
 gem 'validates_email_format_of'
 gem 'simple_form'
 gem "letter_opener", :group => :development
+
+gem "bootstrap-sass", ">= 2.1.0.0"

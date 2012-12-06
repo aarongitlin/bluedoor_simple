@@ -2,11 +2,16 @@
   = f.error_notification
 
   .form-inputs
-    = f.input :title
-    = f.input :blurb
-    = f.input :email
-    = f.input :phone
-    = f.input :description
+    .span6
+      = f.input :title
+      = f.input :description
+      = f.input :blurb, :as => "text"
+    .span6
+      = f.input :email
+      = f.input :phone
+      = f.input :address
+      = f.input :thankyoutext,  :label => "Email notification text", :as => "text"
+    
 
   .form-actions
     = f.button :submit

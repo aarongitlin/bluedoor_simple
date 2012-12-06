@@ -4,6 +4,9 @@ p
   strong Title:
   = @setting.title
 p
+  strong Description:
+  = @setting.description
+p
   strong Blurb:
   = @setting.blurb
 p
@@ -13,8 +16,12 @@ p
   strong Phone:
   = @setting.phone
 p
-  strong Description:
-  = @setting.description
+  strong Address:
+  = @setting.address
+p
+  strong Email Text:
+  = @setting.thankyoutext
+
 
 = link_to 'Edit', edit_setting_path(@setting)
 '|

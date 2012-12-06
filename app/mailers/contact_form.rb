@@ -1,7 +1,7 @@
 class ContactForm < ActionMailer::Base
   
-  # default from: "aaron@lovesyoudesign.com"
-  # default to: "aaron@lovesyoudesign.com"
+  default from: "hello@bluedoorcafe.org"
+  default to: "hello@bluedoorcafe.org"
 
   def email_form(message)
   	@message = message

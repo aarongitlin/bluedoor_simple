@@ -46,5 +46,4 @@ gem "letter_opener", :group => :development
 
 gem "bootstrap-sass", ">= 2.1.0.0"
 gem 'font-awesome-sass-rails'
-
-gem "acts_as_singleton" # Used to store settings in the database
+gem 'thin'

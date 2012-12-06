@@ -1,11 +1,11 @@
 class ContactForm < ActionMailer::Base
   
-  default from: "aaron@lovesyoudesign.com"
-  default to: "aaron@lovesyoudesign.com"
+  # default from: "aaron@lovesyoudesign.com"
+  # default to: "aaron@lovesyoudesign.com"
 
-  def email_form(message)
+  def email_form(message, setting)
   	@message = message
-  	mail subject: "[Your Homepage] #{message.name} left a message"
+  	mail subject: "Blue Door Cafe #{message.name} left a message"
   end
 
 end

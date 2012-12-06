@@ -1,0 +1,12 @@
+= simple_form_for(@setting) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :blurb
+    = f.input :email
+    = f.input :phone
+    = f.input :description
+
+  .form-actions
+    = f.button :submit

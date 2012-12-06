@@ -1,0 +1,35 @@
+= @settings.title
+= @settings.blurb
+= @settings.email
+= @settings.phone
+= @settings.description
+
+= link_to 'Edit', edit_setting_path(@settings)
+
+/ h1 Listing settings
+
+/ table
+/   tr
+/     th Title
+/     th Blurb
+/     th Email
+/     th Phone
+/     th Description
+/     th
+/     th
+/     th
+
+/   - @settings.each do |setting|
+/     tr
+/       td = setting.title
+/       td = setting.blurb
+/       td = setting.email
+/       td = setting.phone
+/       td = setting.description
+/       td = link_to 'Show', setting
+/       td = link_to 'Edit', edit_setting_path(setting)
+/       td = link_to 'Destroy', setting, :confirm => 'Are you sure?', :method => :delete
+
+/ br
+
+/ = link_to 'New Setting', new_setting_path

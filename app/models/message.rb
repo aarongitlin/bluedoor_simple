@@ -30,4 +30,6 @@ class Message
 
   	# Body is optional but if given must be 500 characters at maximum
   	validates_length_of :body, maximum: 500
+
+  	# send a signup email to the user, pass in the user object that contains the user's email address
 end

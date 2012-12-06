@@ -1,13 +1,36 @@
-h1 Welcome
-
-p You may leave me a mesage right here. Thanks for stopping by.
+.logo
+  = link_to image_tag("blue_door_logo.png"), '/', :alt => 'Blue Door Cafe East Kew'
+h2.headline #{@setting.description}
+hr
+#home-text.row-fluid
+  p.span10.offset1 = @setting.blurb
+hr
+#contact-details.row-fluid
+  .span3
+    i.icon-phone &nbsp;
+    = @setting.phone
+  .span3
+    i.icon-envelope &nbsp;
+    = mail_to @setting.email
+  .span5
+    i.icon-home &nbsp;
+    = @setting.address
+hr
 
 - flash.each do |name, value|
 	p class="#{name}" #{value}
 
-= simple_form_for @message, url: email_form_path do |f|
-	= f.input :name
-	= f.input :email
-	= f.input :phone
-	= f.input :body, as: :text
-	= f.button :submit
+#message-outer
+  #message-inner
+    #message-left.span4
+      p We'd love to hear from you! Send us an email, give us a call, or use this handy form over here. We'll get back to you as soon as we can!
+    #message-form
+      = simple_form_for @message, url: email_form_path do |f|
+        .span4
+          = f.input :name
+          = f.input :email
+        .span4
+          = f.input :body, as: :text, :input_html => {:rows => 5}
+        .row-fluid
+          .span
+            = f.button :submit, :class => 'pull-right'

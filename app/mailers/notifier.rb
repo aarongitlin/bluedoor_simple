@@ -5,7 +5,7 @@ class Notifier < ActionMailer::Base
   def thankyou_email(message)
     mail( :to => message.email,
     :subject => "Thanks for the enquiry" 
-    :)
+    )
   end
   def
 end

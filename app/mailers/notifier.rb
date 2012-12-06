@@ -7,5 +7,4 @@ class Notifier < ActionMailer::Base
     :subject => "Thanks for the enquiry" 
     )
   end
-  def
 end

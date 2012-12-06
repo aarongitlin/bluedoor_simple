@@ -1,0 +1,28 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @setting.title
+p
+  strong Description:
+  = @setting.description
+p
+  strong Blurb:
+  = @setting.blurb
+p
+  strong Email:
+  = @setting.email
+p
+  strong Phone:
+  = @setting.phone
+p
+  strong Address:
+  = @setting.address
+p
+  strong Email Text:
+  = @setting.thankyoutext
+
+
+= link_to 'Edit', edit_setting_path(@setting)
+'|
+= link_to 'Back', settings_path

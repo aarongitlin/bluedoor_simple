@@ -48,3 +48,5 @@ gem "bootstrap-sass", ">= 2.1.0.0"
 gem 'font-awesome-sass-rails'
 gem 'thin'
 gem 'newrelic_rpm'
+
+gem "social-buttons", git: "git://github.com/kristianmandrup/social-buttons.git"

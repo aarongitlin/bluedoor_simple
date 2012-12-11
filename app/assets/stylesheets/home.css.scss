@@ -1,10 +1,13 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$blue: #0f4f8a;
+$blue: rgba(15, 79, 138, 0.65);
 $darkBlue: darken($blue, 15%);
-$lightBlue: lighten($blue, 15%);
-$bodyBackground: #e9eff4;
+$bodyBackground: #FAFCFD;
+
+
+$fg: "franklin-gothic-urw", sans-serif;
+$fg-comp: "franklin-gothic-ext-comp-urw", sans-serif;
 
 body {
   background-color: #eee;
@@ -12,15 +15,22 @@ body {
   -webkit-linear-gradient(45deg, $blue 25%, transparent 25%, transparent 75%, $blue 75%, $blue);
   background-size:60px 60px;
   background-position:0 0, 30px 30px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
 }
+
+$blue: rgba(15, 79, 138, 0.85);
+$darkBlue: darken($blue, 15%);
+$lightBlue: lighten($blue, 15%);
+
 p {
   font-size: 1.0em;
   line-height: 1.5em;
+  font-family: $fg;
 }
 h2 {
-  font-size: 2.0em;
+  font-size: 2.4em;
+  font-family: $fg-comp;
 }
 a {
   &:hover {
@@ -28,6 +38,13 @@ a {
     background-color: $blue;
   }
 }
+.socialtop {
+  display: inline-block;
+}
+.twitter, .facebook {
+  float: left;
+}
+
 #message-outer {
   border: 2px solid lightblue;
   border-radius: 5px;
@@ -53,6 +70,7 @@ a {
               8px 7px 1px $darkBlue,7px 8px 1px $lightBlue,
               9px 8px 1px $darkBlue;
 }
+
 .logo {
   padding-left: 50%;
   margin-left: -150px;
@@ -64,6 +82,8 @@ a {
 }
 h2.headline {
   text-align: center;
+  text-transform: uppercase;
+  color: $blue;
 }
 #home-text {
 

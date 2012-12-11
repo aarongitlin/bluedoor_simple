@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require socialite
 //= require_tree .
+$(document).ready(function() {
+
+  var context = $(".socialtop");
+  Socialite.load(context);
+  
+})
